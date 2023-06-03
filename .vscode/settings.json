@@ -1,0 +1,5 @@
+{
+  "prettier.configPath": "./.prettierrc.json",
+  "eslint.workingDirectories": ["./"],
+  "javascript.preferences.importModuleSpecifier": "non-relative"
+}

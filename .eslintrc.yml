@@ -1,0 +1,52 @@
+---
+root: true
+extends:
+  - eslint:recommended
+  - next
+  - next/core-web-vitals
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/recommended
+  - prettier
+plugins:
+  - sort-keys-custom-order
+  - unused-imports
+rules:
+  import/order: # eslint-plugin-importによる並び替え
+    - warn
+    - groups:
+        - builtin
+        - external
+        - internal
+      alphabetize:
+        order: asc
+        caseInsensitive: true
+  import/newline-after-import: error
+  import/no-duplicates: error
+  "@typescript-eslint/naming-convention":
+    - warn
+    - selector: "class"
+      format: ["PascalCase"]
+    - selector: "variable"
+      format: ["strictCamelCase","StrictPascalCase","UPPER_CASE"]
+    - selector: "function"
+      format: ["strictCamelCase", StrictPascalCase]
+    - selector: "parameter"
+      format: ["strictCamelCase"]
+      leadingUnderscore: "allow"
+    - selector: ["typeAlias","interface"]
+      format: ["StrictPascalCase","UPPER_CASE"]
+  sort-keys-custom-order/object-keys:
+    - error
+    - orderedKeys: ["id", "name", "title"]
+  sort-keys-custom-order/type-keys:
+    - error
+    - orderedKeys: ["id", "name", "title"]
+  unused-imports/no-unused-imports:
+    - error
+  no-console: warn
+  react/react-in-jsx-scope: off
+  react/prop-types: off
+  react/display-name: off
+  react-hooks/exhaustive-deps: off
