@@ -8,10 +8,12 @@ extends:
   - plugin:react-hooks/recommended
   - plugin:@typescript-eslint/recommended
   - plugin:import/recommended
+  - plugin:tailwindcss/recommended
   - prettier
 plugins:
   - sort-keys-custom-order
   - unused-imports
+  - tailwindcss
 rules:
   import/order: # eslint-plugin-importによる並び替え
     - warn
@@ -29,14 +31,14 @@ rules:
     - selector: "class"
       format: ["PascalCase"]
     - selector: "variable"
-      format: ["strictCamelCase","StrictPascalCase","UPPER_CASE"]
+      format: ["strictCamelCase", "StrictPascalCase", "UPPER_CASE"]
     - selector: "function"
       format: ["strictCamelCase", StrictPascalCase]
     - selector: "parameter"
       format: ["strictCamelCase"]
       leadingUnderscore: "allow"
-    - selector: ["typeAlias","interface"]
-      format: ["StrictPascalCase","UPPER_CASE"]
+    - selector: ["typeAlias", "interface"]
+      format: ["StrictPascalCase", "UPPER_CASE"]
   sort-keys-custom-order/object-keys:
     - error
     - orderedKeys: ["id", "name", "title"]
