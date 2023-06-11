@@ -3,5 +3,7 @@
   "tabWidth": 2,
   "singleQuote": false,
   "trailingComma": "all",
-  "semi": false
+  "semi": false,
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.1.3"
 }
