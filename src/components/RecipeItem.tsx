@@ -1,33 +1,32 @@
 import Image from "next/image"
 import Link from "next/link"
+import { TrendingRecipeType } from "@/app/page"
 import { HeartIcon } from "@/components/icon/HeartIcon"
 
 type Props = {
-  title: string
-  description: string
-  favoriteCount: number
-  href: string
-  image: string
+  recipe: TrendingRecipeType
 }
 
 export const RecipeItem = (props: Props) => {
-  const { title, description, favoriteCount, href, image } = props
-  const formattedNumber: string = favoriteCount.toLocaleString()
+  const { recipe } = props
+  const favoriteCount: string = recipe.favoriteCount.toLocaleString()
   return (
     <Link
-      href={{ pathname: href }}
-      className="relative inline-block w-[174px] md:w-[218px] md:hover:opacity-90"
+      href={{ pathname: recipe.path }}
+      className="relative inline-block w-[160px] shrink-0 snap-start md:hover:opacity-90"
     >
-      <Image src={image} width={400} height={400} alt="レシピ" />
-      <div className="absolute right-2 top-2 flex items-center gap-1 rounded-2xl bg-[#0400137B]/[.48] px-2 py-1 text-sm font-normal text-white">
-        <HeartIcon />
-        {formattedNumber}
-      </div>
-      <div className="mt-1.5 line-clamp-2 text-xs font-bold text-[#1A1523]">
-        {title}
+      <Image src={recipe.image} width={400} height={400} alt={recipe.title} />
+      {recipe.favoriteCount ? (
+        <div className="absolute right-2 top-2 flex items-center gap-1 rounded-2xl bg-[#0400137B]/[.48] px-2 py-1 text-sm font-normal text-white">
+          <HeartIcon />
+          {favoriteCount}
+        </div>
+      ) : null}
+      <div className="mt-1.5 line-clamp-2 min-h-[32px] text-xs font-bold text-[#1A1523]">
+        {recipe.title}
       </div>
       <div className="mt-1 line-clamp-1 text-[10px] text-[#6F6E77]">
-        {description}
+        {recipe.description}
       </div>
     </Link>
   )
