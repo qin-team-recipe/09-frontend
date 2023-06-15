@@ -52,6 +52,6 @@ rules:
   react/prop-types: off
   react/display-name: off
   react-hooks/exhaustive-deps: off
-  settings:
-    - "import/resolver":
-        - typescript: {}
+settings:
+  "import/resolver":
+    typescript: {}
