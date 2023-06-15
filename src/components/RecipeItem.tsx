@@ -23,10 +23,10 @@ export const RecipeItem = (props: Props) => {
         <HeartIcon />
         {formattedNumber}
       </div>
-      <div className="mt-1.5 line-clamp-2 h-7 overflow-hidden text-xs font-bold text-[#1A1523]">
+      <div className="mt-1.5 line-clamp-2 min-h-8 text-xs font-bold text-[#1A1523]">
         {title}
       </div>
-      <div className="mt-1 line-clamp-1 overflow-hidden text-[10px] text-[#6F6E77]">
+      <div className="mt-1 line-clamp-1 text-[10px] text-[#6F6E77]">
         {description}
       </div>
     </Link>
