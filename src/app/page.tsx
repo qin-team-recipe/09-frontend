@@ -2,28 +2,7 @@ import { ChefList } from "@/components/ChefList"
 import { FeaturedChefList } from "@/components/FeaturedChefList"
 import { SearchBox } from "@/components/SearchBox"
 import { TrendingRecipeList } from "@/components/TrendingRecipeList"
-
-export type FeaturedChefType = {
-  name: string
-  image: string
-  path: string
-}
-
-export type TrendingRecipeType = {
-  title: string
-  description: string
-  favoriteCount: number
-  image: string
-  path: string
-}
-
-export type ChefType = {
-  name: string
-  description: string
-  image: string
-  path: string
-  recipeCount: number
-}
+import { ChefType, FeaturedChefType, TrendingRecipeType } from "@/types/types"
 
 const featuredChefList: FeaturedChefType[] = [
   {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { FeaturedChefType } from "@/app/page"
+import { FeaturedChefType } from "@/types/types"
 
 type Props = {
   chef: FeaturedChefType

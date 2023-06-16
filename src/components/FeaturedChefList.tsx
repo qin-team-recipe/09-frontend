@@ -1,8 +1,9 @@
 import React from "react"
-import { FeaturedChefType } from "@/app/page"
+
 import { FeaturedChef } from "@/components/FeaturedChef"
 import { Heading } from "@/components/Heading"
 import { HeadingTitle } from "@/components/HeadingTitle"
+import { FeaturedChefType } from "@/types/types"
 
 type Props = {
   featuredChefList: FeaturedChefType[]

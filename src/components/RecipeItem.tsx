@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { TrendingRecipeType } from "@/app/page"
 import { HeartIcon } from "@/components/icon/HeartIcon"
+import { TrendingRecipeType } from "@/types/types"
 
 type Props = {
   recipe: TrendingRecipeType

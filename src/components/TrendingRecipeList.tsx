@@ -1,9 +1,10 @@
 import React from "react"
-import { TrendingRecipeType } from "@/app/page"
+
 import { Heading } from "@/components/Heading"
 import { HeadingTitle } from "@/components/HeadingTitle"
 import { MoreLink } from "@/components/MoreLink"
 import { RecipeItem } from "@/components/RecipeItem"
+import { TrendingRecipeType } from "@/types/types"
 
 type Props = {
   trendingRecipeList: TrendingRecipeType[]

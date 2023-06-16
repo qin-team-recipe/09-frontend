@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChefType } from "@/app/page"
 import { TablerToolsKitchen2Icon } from "@/components/icon/TablerToolsKitchen2Icon"
+import { ChefType } from "@/types/types"
 
 type Props = {
   chef: ChefType
