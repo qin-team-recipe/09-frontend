@@ -1,7 +1,4 @@
-import { Inter } from "next/font/google"
 import { ArrowLeftIcon } from "src/components/ArrowLeftIcon"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +12,8 @@ export default function RootLayout({
 }) {
   return (
     <div className="flex w-full min-h-screen mx-auto sm:max-w-2xl sm:flex-row ">
-      <div className="w-[200px] border-l">サイドメニュー</div>
+      {/* TODO: サイドメニューを実装し次第入れる */}
+      <div className="w-[147px] border-l">サイドメニュー</div>
       <div className="flex-1 border">
         <div className="flex p-3">
           <a href="#" className="px-1">
@@ -29,6 +27,17 @@ export default function RootLayout({
             />
           </div>
         </div>
+        <nav className="flex text-sm border-b">
+          <a href="#" className="flex-1 py-2 text-center">
+            レシピ
+          </a>
+          <a
+            href="#"
+            className="flex-1 py-2 font-bold text-center border-b-2 border-[#000000]"
+          >
+            シェフ
+          </a>
+        </nav>
         {children}
       </div>
     </div>
