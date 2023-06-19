@@ -29,6 +29,9 @@ export default function RootLayout({
         </div>
         <nav className="flex text-sm border-b">
           <a href="#" className="flex-1 py-2 text-center">
+            すべて
+          </a>
+          <a href="#" className="flex-1 py-2 text-center">
             レシピ
           </a>
           <a
