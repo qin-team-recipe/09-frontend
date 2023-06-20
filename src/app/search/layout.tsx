@@ -11,23 +11,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex w-full min-h-screen mx-auto sm:max-w-2xl sm:flex-row ">
+    <div className="mx-auto flex min-h-screen w-full sm:max-w-2xl sm:flex-row ">
       {/* TODO: サイドメニューを実装し次第入れる */}
       <div className="w-[147px] border-l">サイドメニュー</div>
       <div className="flex-1 border">
         <div className="flex p-3">
           <a href="#" className="px-1">
-            <ArrowLeftIcon className="w-5 h-5" />
+            <ArrowLeftIcon className="h-5 w-5" />
           </a>
-          <div className="bg-[#F4F2F4] flex-1 rounded">
+          <div className="flex-1 rounded bg-[#F4F2F4]">
             <input
               type="text"
               placeholder="シェフやレシピを検索"
-              className="w-full p-1 bg-inherit"
+              className="w-full bg-inherit p-1"
             />
           </div>
         </div>
-        <nav className="flex text-sm border-b">
+        <nav className="flex border-b text-sm">
           <a href="#" className="flex-1 py-2 text-center">
             すべて
           </a>
@@ -36,7 +36,7 @@ export default function RootLayout({
           </a>
           <a
             href="#"
-            className="flex-1 py-2 font-bold text-center border-b-2 border-[#000000]"
+            className="flex-1 border-b-2 border-[#000000] py-2 text-center font-bold"
           >
             シェフ
           </a>
