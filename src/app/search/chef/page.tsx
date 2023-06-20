@@ -6,6 +6,7 @@ export default function Home() {
       {/* TODO: 値を動的にする */}
       {[...Array(10)].map((_, i) => (
         <ChefCard
+          key={i}
           name={"シェフ名"}
           description={
             "白ごはん.comを運営しています。アップしたレシピの紹介や、youtube動画、日々の食のこと、オリジナル商品などの案内等をブログでやっています。"
