@@ -89,7 +89,7 @@ const chefList: ChefType[] = [
 
 export default function Home() {
   return (
-    <div className="max-w-[480px] border-x border-[#EEDEF] pt-[57px]">
+    <div className="max-w-[480px] border-x border-[#EEDEF]">
       <SearchBox />
       <div className="py-5">
         <FeaturedChefList featuredChefList={featuredChefList} />
