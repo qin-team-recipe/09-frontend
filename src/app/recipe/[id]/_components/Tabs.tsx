@@ -6,7 +6,7 @@ type Props = {
 }
 
 export const Tabs = ({ activePath, children }: Props) => {
-  const activeClassName = "border-b-2 border-[#1A1523] font-bold "
+  const activeClassName = "border-b-2 border-[#1A1523] font-bold"
 
   return (
     <nav className="flex [&>a]:flex-1 [&>a]:py-2.5 [&>a]:text-center">
