@@ -12,7 +12,7 @@ export const Tabs = ({ activePath, children }: Props) => {
     <nav className="flex [&>a]:flex-1 [&>a]:py-2.5 [&>a]:text-center">
       {Children.map(children, (child: ReactElement) =>
         cloneElement(child, {
-          className: activePath === child.props.href ? activeClassName : "",
+          className: activePath === child.props.href ? activeClassName : "border-b-2 border-[#E4E2E4]",
         }),
       )}
     </nav>
