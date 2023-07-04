@@ -2,6 +2,7 @@ import Image from "next/image"
 import { BackIcon } from "@/components/BackIcon"
 import ChefInfo from "@/components/ChefInfo"
 import { NavigationTabs } from "@/components/NavigationTabs"
+import { TomatoButton } from "@/components/TomatoButton"
 
 export const metadata = {
   title: "Create Next App",
@@ -43,7 +44,14 @@ export default function RootLayout({
             "初の絵本出版！『まねっこシェフ』・ふわふわ！スクランブルエッグ・にぎにぎ！おにぎり主婦の友社より3月3日、2冊同時発売！絶賛発売中！"
           }
           follower={456}
+          recipe={123}
         />
+
+        {/* TODO: フォローしているかどうかのロジックを記載する */}
+        <div className="mb-6 ml-4 mt-5">
+          <TomatoButton text="フォローする" />
+          {/* <OutlinedTomatoButton text="フォロー中" /> */}
+        </div>
 
         <NavigationTabs />
         {children}
