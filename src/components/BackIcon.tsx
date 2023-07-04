@@ -9,7 +9,7 @@ export const BackIcon = () => {
     <Image
       onClick={() => router.back()}
       className="absolute left-4 top-4"
-      src="/back.png"
+      src="/back.svg"
       alt="back icon"
       width={32}
       height={32}
