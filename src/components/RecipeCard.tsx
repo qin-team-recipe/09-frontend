@@ -1,14 +1,25 @@
-import Image from "next/image"
+import { FC } from "react"
+import { RecipeImage } from "@/components/RecipeImage"
 
-const RecipeCard = () => {
+type RecipeCardProps = {
+  title: string
+  description: string
+  likes: number
+}
+
+const RecipeCard: FC<RecipeCardProps> = (props) => {
+  const { title, description, likes } = props
+
   return (
-    <Image
-      className="h-full w-full"
-      src="/sampleRecipe.png"
-      alt="sample recipe"
-      width={171}
-      height={171}
-    />
+    <div>
+      <RecipeImage likes={likes} />
+      <div className="mt-2">
+        <p className="mb-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-xs font-bold">
+          {title}
+        </p>
+        <p className="line-clamp-1 text-xs text-custom-gray">{description}</p>
+      </div>
+    </div>
   )
 }
 
