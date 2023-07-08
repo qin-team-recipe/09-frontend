@@ -177,11 +177,17 @@ const ShoppingListsPage: NextPage = () => {
             >
               <input
                 type="checkbox"
-                className="h-6 w-6 cursor-pointer rounded-full border-2 border-tomato-light text-mauve-8 outline-none ring-inset focus:ring-0 focus-visible:ring-1 focus-visible:ring-tomato-9 checked:focus-visible:ring-mauve-9"
+                className="h-6 w-6 shrink-0 appearance-none !rounded-full border-2 border-tomato-light text-mauve-8 outline-none ring-inset checked:border-[#C8C7CB] checked:bg-[#C8C7CB] checked:bg-[url('/check.svg')] checked:bg-center focus:ring-0 focus-visible:ring-1 focus-visible:ring-tomato-9 checked:focus-visible:ring-[#C8C7CB]"
                 checked={ingredient.isChecked}
                 onChange={() => handleMyMemoCheckBoxChange(ingredient.id)}
               />
-              <p className="grow text-sm">{ingredient.name}</p>
+              <p
+                className={`grow text-sm ${
+                  ingredient.isChecked && "text-[#C8C7CB]"
+                }`}
+              >
+                {ingredient.name}
+              </p>
               {ingredient.isChecked && (
                 <button className="text-tomato-light">削除</button>
               )}
