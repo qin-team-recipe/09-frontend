@@ -19,3 +19,16 @@ export type ChefType = {
   path: string
   recipeCount: number
 }
+
+export type IngredientLine = {
+  id: number
+  name: string
+  isChecked: boolean
+}
+
+export type List = {
+  id: number
+  name: string
+  ingredients: IngredientLine[]
+  order: number
+}
