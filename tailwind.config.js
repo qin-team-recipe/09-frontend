@@ -16,7 +16,14 @@ module.exports = {
       colors: {
         "custom-gray": "#6F6E77",
         "custom-light-gray": "#E4E2E4",
-        "tomato-light": "#E54D2E",
+        mauve: {
+          8: "#F5F3F7",
+          9: "#EDEBF0",
+        },
+        tomato: {
+          9: "#E54D2E",
+          light: "#E54D2E",
+        },
       },
     },
   },
