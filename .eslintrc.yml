@@ -10,6 +10,7 @@ extends:
   - plugin:import/recommended
   - plugin:tailwindcss/recommended
   - prettier
+  - plugin:storybook/recommended
 plugins:
   - sort-keys-custom-order
   - unused-imports
