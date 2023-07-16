@@ -1,8 +1,6 @@
 import React from "react"
 import { ChefCard } from "@/components/ChefCard"
-import { Heading } from "@/components/Heading"
-import { HeadingTitle } from "@/components/HeadingTitle"
-import { MoreLink } from "@/components/MoreLink"
+import { Heading, HeadingTitle, MoreLink } from "@/components/Heading"
 import { ChefType } from "@/types/types"
 
 type Props = {

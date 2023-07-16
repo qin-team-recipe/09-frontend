@@ -1,8 +1,6 @@
 import React from "react"
 
-import { Heading } from "@/components/Heading"
-import { HeadingTitle } from "@/components/HeadingTitle"
-import { MoreLink } from "@/components/MoreLink"
+import { Heading, HeadingTitle, MoreLink } from "@/components/Heading"
 import { RecipeItem } from "@/components/RecipeItem"
 import { TrendingRecipeType } from "@/types/types"
 
