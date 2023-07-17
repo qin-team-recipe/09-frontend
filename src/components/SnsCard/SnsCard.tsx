@@ -1,8 +1,5 @@
 import { FC } from "react"
-import { ExternalLinkIcon } from "@/components/ExternalLinkIcon"
-import { InstagramIcon } from "@/components/InstagramIcon"
-import { LinkIcon } from "@/components/LinkIcon"
-import { TwitterIcon } from "@/components/TwitterIcon"
+import { ExternalLinkIcon,  InstagramIcon, LinkIcon, TwitterIcon} from '@/components/icons'
 
 type SnsCardProps = {
   title: string

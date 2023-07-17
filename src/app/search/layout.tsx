@@ -1,4 +1,4 @@
-import { ArrowLeftIcon } from "src/components/ArrowLeftIcon"
+import { ArrowLeftIcon } from "@/components/icons"
 
 export const metadata = {
   title: "Create Next App",

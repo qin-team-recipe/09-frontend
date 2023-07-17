@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { HeartIcon } from "@/components/icon/HeartIcon"
+import { HeartIcon } from "@/components/icons"
 import { TrendingRecipeType } from "@/types/types"
 
 type Props = {
