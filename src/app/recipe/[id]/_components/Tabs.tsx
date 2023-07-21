@@ -7,15 +7,17 @@ type Props = {
 
 export const Tabs = ({ activePath, children }: Props) => {
   const activeClassName = "border-b-2 border-[#1A1523] font-bold"
+  const nonActiveClassName = "border-b-2 border-[#E4E2E4]"
 
   return (
-    <nav className="flex [&>a]:flex-1 [&>a]:py-2.5 [&>a]:text-center [&>a]:text-sm">
+    <nav className="flex">
       {Children.map(children, (child: ReactElement) =>
         cloneElement(child, {
-          className:
+          className: `flex-1 ${child.props.className} ${
             activePath === child.props.href
               ? activeClassName
-              : "border-b-2 border-[#E4E2E4]",
+              : nonActiveClassName
+          }`,
         }),
       )}
     </nav>

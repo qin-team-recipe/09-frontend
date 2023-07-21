@@ -6,8 +6,18 @@ export default function Recipe({ params }: { params: { id: number } }) {
   return (
     <div className="flex flex-col justify-items-stretch">
       <Tabs activePath={`/recipe/${params.id}`}>
-        <Link href={`/recipe/${params.id}`}>作り方</Link>
-        <Link href={`/recipe/${params.id}/ingredients`}>材料</Link>
+        <Link
+          className="py-2.5 text-center text-sm"
+          href={`/recipe/${params.id}`}
+        >
+          作り方
+        </Link>
+        <Link
+          className="py-2.5 text-center text-sm"
+          href={`/recipe/${params.id}/ingredients`}
+        >
+          材料
+        </Link>
       </Tabs>
       <div>
         {instructions.map((item, index) => (
