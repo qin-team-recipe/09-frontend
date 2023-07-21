@@ -6,7 +6,8 @@ type Props = {
   name: string
 }
 
-export const IngredientListItem = ({ name }: Props) => {
+export const IngredientListItem = (props: Props) => {
+  const { name } = props
   return (
     <div className="flex h-10 items-center border-b py-2 pl-4 pr-2">
       <p className="text-sm">{name}</p>

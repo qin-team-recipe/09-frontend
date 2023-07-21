@@ -5,7 +5,9 @@ type Props = {
   children: ReactElement[]
 }
 
-export const Tabs = ({ activePath, children }: Props) => {
+export const Tabs = (props: Props) => {
+  const { activePath, children } = props
+
   const activeClassName = "border-[#1A1523] font-bold"
   const nonActiveClassName = "border-[#E4E2E4]"
 
