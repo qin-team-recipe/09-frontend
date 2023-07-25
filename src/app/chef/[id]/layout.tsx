@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { BackIcon } from "@/components/BackIcon"
-import ChefInfo from "@/components/ChefInfo"
+import { ChefInfo } from "@/components/ChefInfo"
+import { BackIcon } from "@/components/icons"
 import { NavigationTabs } from "@/components/NavigationTabs"
 import { TomatoButton } from "@/components/TomatoButton"
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { SearchIcon } from "@/components/icon/SearchIcon"
+import { SearchIcon } from "@/components/icons"
 
 export const SearchBox = () => {
   const [value, setValue] = useState("")

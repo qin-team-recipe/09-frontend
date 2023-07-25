@@ -1,4 +1,4 @@
-import { ChefCard } from "src/components/ChefCard"
+import { ChefCard } from "@/components/ChefList"
 
 export default function Home() {
   return (

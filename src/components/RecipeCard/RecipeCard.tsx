@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { RecipeImage } from "@/components/RecipeImage"
+import { RecipeImage } from "./RecipeImage"
 
 type RecipeCardProps = {
   title: string
@@ -7,7 +7,7 @@ type RecipeCardProps = {
   likes: number
 }
 
-const RecipeCard: FC<RecipeCardProps> = (props) => {
+export const RecipeCard: FC<RecipeCardProps> = (props) => {
   const { title, description, likes } = props
 
   return (
@@ -22,5 +22,3 @@ const RecipeCard: FC<RecipeCardProps> = (props) => {
     </div>
   )
 }
-
-export default RecipeCard

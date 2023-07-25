@@ -7,7 +7,7 @@ type ChefInfoProps = {
   recipe: number
 }
 
-const ChefInfo: FC<ChefInfoProps> = (props) => {
+export const ChefInfo: FC<ChefInfoProps> = (props) => {
   const { name, description, follower, recipe } = props
 
   return (
@@ -30,4 +30,5 @@ const ChefInfo: FC<ChefInfoProps> = (props) => {
   )
 }
 
-export default ChefInfo
+`export default ChefInfo
+`
