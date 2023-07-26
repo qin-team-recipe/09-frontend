@@ -5,15 +5,18 @@ import { TrendingRecipeType } from "@/types/types"
 
 type Props = {
   recipe: TrendingRecipeType
+  width?: string;
 }
 
+
+
 export const RecipeItem = (props: Props) => {
-  const { recipe } = props
+  const { recipe, width = '[160px]' } = props
   const favoriteCount: string = recipe.favoriteCount.toLocaleString()
   return (
     <Link
       href={{ pathname: recipe.path }}
-      className="relative inline-block w-[160px] shrink-0 snap-start md:hover:opacity-90"
+      className={`relative inline-block ${'w-' + width} shrink-0 snap-start md:hover:opacity-90`}
     >
       <Image src={recipe.image} width={400} height={400} alt={recipe.title} />
       {recipe.favoriteCount ? (
