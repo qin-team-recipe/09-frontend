@@ -19,3 +19,9 @@ export type ChefType = {
   path: string
   recipeCount: number
 }
+
+export type RecipeDraftItem = {
+  id: number
+  title: string
+  createdAt: string
+}
